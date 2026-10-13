@@ -5,17 +5,25 @@ class Ranma < Formula
   homepage "https://github.com/masshirodev/ranma"
   license any_of: ["MIT", "Apache-2.0"]
 
-  # Linux only until ranma runs on macOS (doc/ROADMAP.md, milestone 15).
-  depends_on :linux
+  on_macos do
+    on_intel do
+      url "https://github.com/masshirodev/ranma/releases/download/v0.3.0/ranma-0.3.0-x86_64-apple-darwin.tar.gz"
+      sha256 "970c9cb1b5b65d67f3ea81ce97d86a311e1fce21eb4a7f3304a5153b059420a1"
+    end
+    on_arm do
+      url "https://github.com/masshirodev/ranma/releases/download/v0.3.0/ranma-0.3.0-aarch64-apple-darwin.tar.gz"
+      sha256 "ab8e38ea348ff2582cfa25ca96b7d8b2df11c89cd8825803d0cfa7316a32b40a"
+    end
+  end
 
   on_linux do
     on_intel do
-      url "https://github.com/masshirodev/ranma/releases/download/v0.2.4/ranma-0.2.4-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "113fc6eb986187c32b4b9933b91a65752cb8474dd44863d54b24563bab6842ac"
+      url "https://github.com/masshirodev/ranma/releases/download/v0.3.0/ranma-0.3.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "93f18237cb55271dda7216095aed5ff99699a5abeec7829bf8ce17c70c1beea7"
     end
     on_arm do
-      url "https://github.com/masshirodev/ranma/releases/download/v0.2.4/ranma-0.2.4-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8ce4077b8378c2db12f30834055d3579113859fc568114c64cdc118b688f481e"
+      url "https://github.com/masshirodev/ranma/releases/download/v0.3.0/ranma-0.3.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "20429814bb375606f77df58e1bdd56e51d68c5e977254c5ea7725df9ad6c8f5c"
     end
   end
 
