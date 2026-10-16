@@ -7,23 +7,23 @@ class Ranma < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/masshirodev/ranma/releases/download/v0.3.0/ranma-0.3.0-x86_64-apple-darwin.tar.gz"
-      sha256 "970c9cb1b5b65d67f3ea81ce97d86a311e1fce21eb4a7f3304a5153b059420a1"
+      url "https://github.com/masshirodev/ranma/releases/download/v0.4.0/ranma-0.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "4b160c16e43664b4e0fe5573b82f86f6eb0464014aa64722678e3aaf89cc94a6"
     end
     on_arm do
-      url "https://github.com/masshirodev/ranma/releases/download/v0.3.0/ranma-0.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "ab8e38ea348ff2582cfa25ca96b7d8b2df11c89cd8825803d0cfa7316a32b40a"
+      url "https://github.com/masshirodev/ranma/releases/download/v0.4.0/ranma-0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "4e42d425899d59013a79a3c322e1408201f1a9c230a3c60957c6a7952a30a86b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/masshirodev/ranma/releases/download/v0.3.0/ranma-0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "93f18237cb55271dda7216095aed5ff99699a5abeec7829bf8ce17c70c1beea7"
+      url "https://github.com/masshirodev/ranma/releases/download/v0.4.0/ranma-0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ca0cca5d05dbf7ccf61b6e736fd9250d2920607d8cfbcae6cc393c2753d4fabd"
     end
     on_arm do
-      url "https://github.com/masshirodev/ranma/releases/download/v0.3.0/ranma-0.3.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "20429814bb375606f77df58e1bdd56e51d68c5e977254c5ea7725df9ad6c8f5c"
+      url "https://github.com/masshirodev/ranma/releases/download/v0.4.0/ranma-0.4.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "06e8ae6ac1578b4d8db0711019ae14aa39d0c90745883bd8194d5057183d999e"
     end
   end
 
